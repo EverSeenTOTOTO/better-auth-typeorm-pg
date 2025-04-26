@@ -17,9 +17,9 @@ export class User {
   @Column("text", { name: "image", nullable: true })
   image: string;
 
-  @Column("datetime", { name: "createdAt", nullable: false, default: () => "CURRENT_TIMESTAMP" })
+  @Column("timestamp", { name: "createdAt", nullable: false, default: () => "CURRENT_TIMESTAMP" })
   createdAt: Date;
 
-  @Column("datetime", { name: "updatedAt", nullable: false, default: () => "CURRENT_TIMESTAMP" })
+  @Column("timestamp", { name: "updatedAt", nullable: false, default: () => "CURRENT_TIMESTAMP" })
   updatedAt: Date;
 }

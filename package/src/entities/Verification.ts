@@ -11,12 +11,12 @@ export class Verification {
   @Column("text", { name: "value", nullable: false })
   value: string;
 
-  @Column("datetime", { name: "expiresAt", nullable: false })
+  @Column("timestamp", { name: "expiresAt", nullable: false })
   expiresAt: Date;
 
-  @Column("datetime", { name: "createdAt", nullable: true })
+  @Column("timestamp", { name: "createdAt", nullable: true })
   createdAt: Date;
 
-  @Column("datetime", { name: "updatedAt", nullable: true })
+  @Column("timestamp", { name: "updatedAt", nullable: true })
   updatedAt: Date;
 }

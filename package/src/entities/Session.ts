@@ -5,16 +5,16 @@ export class Session {
   @Column("varchar", { primary: true, name: "id", length: 36 })
   id: string;
 
-  @Column("datetime", { name: "expiresAt", nullable: false })
+  @Column("timestamp", { name: "expiresAt", nullable: false })
   expiresAt: Date;
 
   @Column("text", { name: "token", nullable: false })
   token: string;
 
-  @Column("datetime", { name: "createdAt", nullable: false, default: () => "CURRENT_TIMESTAMP" })
+  @Column("timestamp", { name: "createdAt", nullable: false, default: () => "CURRENT_TIMESTAMP" })
   createdAt: Date;
 
-  @Column("datetime", { name: "updatedAt", nullable: false, default: () => "CURRENT_TIMESTAMP" })
+  @Column("timestamp", { name: "updatedAt", nullable: false, default: () => "CURRENT_TIMESTAMP" })
   updatedAt: Date;
 
   @Column("text", { name: "ipAddress", nullable: true })

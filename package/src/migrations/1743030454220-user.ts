@@ -16,8 +16,8 @@ export class User1743030454220 implements MigrationInterface {
           { name: "email", type: "varchar", length: "255", isNullable: false },
           { name: "emailVerified", type: "boolean", isNullable: false },
           { name: "image", type: "text", isNullable: true },
-          { name: "createdAt", type: "datetime", isNullable: false },
-          { name: "updatedAt", type: "datetime", isNullable: false },
+          { name: "createdAt", type: "timestamp", isNullable: false },
+          { name: "updatedAt", type: "timestamp", isNullable: false },
         ],
       }),
     );
